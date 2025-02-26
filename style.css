@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;  
+}
+
+.card img {
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.row {
+    column-gap: 370px;
+  }
+
 /* Background */
 body {
 background-color: #000000;
@@ -20,4 +40,17 @@ h4 {
     font-weight: 400;
     color: whitesmoke;
     text-align: center;
+}
+
+.container h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.card-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: justify;
 }
