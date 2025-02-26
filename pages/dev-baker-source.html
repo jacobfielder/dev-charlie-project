@@ -1,0 +1,254 @@
+<xmp>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nuketown2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  
+  <style>
+   
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.wholeMap {
+  height: 650px;
+  width: 1150px;
+  background-color: grey;
+  position: absolute;
+  margin: auto;
+}
+
+.mines {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#mainHouse1 {
+  position: relative;
+  width: 170px;   
+  height: 120px;  
+  background-color: #669999;  
+  top: 50%;       
+  left: 28%;  
+  border-radius: 8px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(10deg);
+}
+
+#mainHouse2 {
+  position: absolute;
+  width: 170px;   
+  height: 120px;  
+  background-color: #669999;  
+  top: 50%; 
+  right: 28%;     
+  border-radius: 8px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-10deg); 
+}
+
+#spawn1 {
+   position: absolute;
+  width: 150px;
+  height: 80px; 
+  background-color: rgba(144, 238, 144, 0.4);
+  top: 50%;
+  left: 15%; 
+  border-radius: 9px;
+  transform: rotate(-80deg);
+  z-index: 1; 
+}
+
+#spawn2 {
+  position: absolute;
+  width: 150px;
+  height: 80px; 
+  background-color: rgba(144, 238, 144, 0.4);
+  top: 50%;
+  right: 15%; 
+  border-radius: 9px;
+  transform: rotate(-100deg);
+  z-index: 1; 
+}
+
+#mainRoad {
+  position: relative;
+  width: 200px;   
+  height: 135px;  
+  background-color: #333; 
+  bottom: 75%; 
+  left: 50%;
+  transform: rotate(90deg)
+}
+
+#redCar {
+  position: absolute;
+  width: 20px;
+  height: 40px; 
+  background-color: red;
+  top: 30%;
+  left: 49%; 
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#greenCar {
+  position: absolute;
+  width: 20px;
+  height: 40px; 
+  background-color: green;
+  top: 83%;
+  left: 49%; 
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(90deg);
+  z-index: 3;
+}
+
+#truck1 {
+  position: absolute;
+  width: 25px;
+  height: 100px; 
+  background-color: #993333;
+  top: 60%;
+  left: 45%; 
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-20deg);
+  z-index: 3;
+}
+
+#truck2 {
+  position: absolute;
+  width: 25px;
+  height: 120px; 
+  background-color: #993333;
+  top: 45%;
+  right: 45%; 
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-20deg);
+  z-index: 3;
+}
+
+#soldierCat {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url('https://i.imgflip.com/89toss.png');
+  background-size: cover; 
+  z-index: 10; 
+}
+
+h1, h6, p {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+#mascot {
+ transform: rotate(180deg);
+}
+ 
+</style>
+   
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Author: Jacob Fielder -->
+<!-- dev baker project -->
+<!-- resources: w3schools -->
+<!-- Bird's Eye view of Call of Duty's 
+famous map, Nuketown 2025 - Black Ops 2
+-->
+
+<h1>Nuketown 2025</h1>
+<h6>Wireframe 
+  <a href="https://github.com/jacobfielder/dev-baker-project/blob/main/IMG_5554.png?raw=true" target="_blank"> click here!</a>
+</h6>
+  <p>This is a bird's eye view of the Call of Duty    Map Nuketown 2025</p>
+  <p>
+
+<div id="nuketown2025" class="wholeMap">
+  
+  <div id="spawn1" class="spawns">Spawn 1</div>
+  
+  <div id="mainHouse1">Main House 1</div>
+  
+  <div id="mainRoad"></div>
+  
+  <div id="redCar"></div>
+  
+  <div id="greenCar"></div>
+  
+  <div id="truck1">t1</div>
+  
+  <div id="truck2">t2</div>
+  
+  <div id="mainRoad"></div>
+  
+  <div id="mainHouse2">Main House 2</div>
+  
+  <div id="spawn2" class="spawns">Spawn 2</div>
+  
+  <div id="soldierCat"></div>
+  
+  <div id="mascot"> <img src="https://github.com/jacobfielder/dev-baker-project/blob/main/seal-with-glasses.png?raw=true" alt="seal with glasses" width="70" height="70">
+  </div>
+ 
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+<script>
+
+$(document).ready(function() {
+      // I can now drag the red car
+      $("#redCar").draggable({
+    stop: function(event, ui) {
+      // get position of red car after stopping
+      const position = ui.position;
+      
+      // interact with console - log position of car
+      console.log(`Red Car moved to: Left: ${position.left}, 
+      Top: ${position.top}`);
+    }
+  });
+     
+    // get map dimensions and offset
+    let map = $("#nuketown2025");
+    let mapWidth = map.width();
+    let mapHeight = map.height();
+    let mapOffset = map.offset(); 
+
+    // create mines inside the map with loop
+    for (let i = 0; i < 5; i++) {
+        let mine = $("<div></div>").addClass("mine")
+            .css({
+                position: "absolute",
+                width: "20px",
+                height: "20px",
+                backgroundColor: "orange",
+                top: `${mapOffset.top + Math.random() * (mapHeight - 20)}px`,
+                left: `${mapOffset.left + Math.random() * (mapWidth - 20)}px`,
+                borderRadius: "50%",
+                boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)"
+            });
+
+        map.append(mine);
+    }
+});
+  
+</script>
+</body>
+</html>
+
+</xmp>
