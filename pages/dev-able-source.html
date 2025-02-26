@@ -1,1 +1,115 @@
+<xmp>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>404: Knowledge Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
+<style>
+
+body {
+   
+  background-color: rgb(153, 153, 102);
+  margin: 20px;
+}
+
+li { 
+  font-size: .9em; 
+  border: dashed 2px white;
+  margin: 2px;
+}
+
+body  {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@import "navigation.css"; /* Using a string */
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Jacob Fielder -->
+<!-- dev able project -->
+<!-- this single web application will be an education blog to show what I learn in the span of this semester -->
+<!-- Resources: w3schools.com -->
+
+<center>
+<h1>Jacob's Education Blog</h1>
+  <h6> This is a blog dedicated to what I learn this semester at UNA. </h6>
+</center>
+
+<a href="https://una.edu/" target="_blank">UNA</a>
+<a href="https://github.com/jacobfielder" target="_blank">Github</a>
+<a href="https://www.linkedin.com/in/jacobfielder/"target="_blank">LinkedIn</a>
+
+<br> </br>
+<p> <strong> Things to talk about </strong> </p>
+  <ul>
+    <li> Helpful Tips Learned </li>
+    <li> Different Methods Learned in Java </li>
+    <li> Fun Things Learned in Web Dev </li>
+</ul>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="enter first name" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="description" placeholder= value="Doe"><br><br>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">
+  </textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+<image src="https://raw.githubusercontent.com/jacobfielder/hello-world/refs/heads/main/IMG_5515.jpg" alt="Jacob's Wireframe" width="500" height="600">
+
+<image src="https://raw.githubusercontent.com/jacobfielder/hello-world/refs/heads/main/Seal%20Pfp%20Aesthetic.jpg" alt="Picture of cool seal" width="500" height="600">
+ 
+
+<!-- new code -->
+<footer>
+  <p>Jacob Fielder</p>
+  <p><a href="">jfielder@una.edu</a></p>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+
+$(document).ready(
+  function(){
+ // code goes here
+  
+    $("#saveParking").on("click", function(){
+    // call f/n
+      let statusText = underConstruction("not ready");
+      
+    //update the status
+    $("#saveParking").text("not yet working.").prop(
+"disabled", true);
+    
+    });
+    
+    function underConstruction(status){
+      
+      return "not yet ready"
+    
+      
+    };
+  
+}
+);
+  
+</script>
+
+</body>
+</html>
+
+</xmp>
