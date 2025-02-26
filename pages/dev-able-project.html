@@ -6,6 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
+<style>
+
+body {
+   
+  background-color: rgb(153, 153, 102);
+  margin: 20px;
+}
+
+li { 
+  font-size: .9em; 
+  border: dashed 2px white;
+  margin: 2px;
+}
+
+body  {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@import "navigation.css"; /* Using a string */
+
+</style>
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -57,6 +79,34 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+
+$(document).ready(
+  function(){
+ // code goes here
+  
+    $("#saveParking").on("click", function(){
+    // call f/n
+      let statusText = underConstruction("not ready");
+      
+    //update the status
+    $("#saveParking").text("not yet working.").prop(
+"disabled", true);
+    
+    });
+    
+    function underConstruction(status){
+      
+      return "not yet ready"
+    
+      
+    };
+  
+}
+);
+  
+</script>
 
 </body>
 </html>
